@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/advancedSearch.css">
+    <title>My Google advanced search</title>
+</head>
+<body>
+    
+    <form action="https://google.com/search" target="_blank">
+
+        <div class="div">
+            <input type="text" name="as_q" placeholder="input 1" class="form-control" aria-describedby="passwordHelpInline">
+            <span id="passwordHelpInline" class="form-text">
+                Type the important words: tri-colour rat terrier
+            </span>
+        </div>
+
+        <div class="div">
+            <input type="text" name="as_epq" placeholder="input 2" class="form-control" aria-describedby="passwordHelpInline">
+            <span id="passwordHelpInline" class="form-text">
+                Put exact words in quotes: "rat terrier"
+            </span>
+        </div>
+
+        <div class="div">
+            <input type="text" name="as_oq" placeholder="input 3" class="form-control" aria-describedby="passwordHelpInline">
+            <span id="passwordHelpInline" class="form-text">
+                Type OR between all the words you want: miniature OR standard
+            </span>
+        </div>
+
+        <div class="div">
+            <input type="text" name="as_eq" placeholder="input 4" class="form-control" aria-describedby="passwordHelpInline">
+            <span id="passwordHelpInline" class="form-text">
+                Put a minus sign just before words that you don't want: -rodent, -"Jack Russell"
+            </span>
+        </div>
+
+        <div class="div">
+            <input type="text" name="as_nlo" placeholder="input 5" class="form-control" aria-describedby="passwordHelpInline">
+            <span id="passwordHelpInline" class="form-text">
+                Put two full stops between the numbers and add a unit of measurement:            
+            </span>
+        </div>
+
+        <div class="div">
+            <input type="text" name="as_nihi" placeholder="input 6" class="form-control" aria-describedby="passwordHelpInline">
+            <span id="passwordHelpInline" class="form-text">
+                Put two full stops between the numbers and add a unit of measurement:
+            </span>
+        </div>
+
+        <input type="submit" value="Advanced Search" class="submit">
+    </form> 
+
+    <div class="links">
+        <a href="imageSearch.html">to images</a>
+        <a href="index.html">to search</a>
+    </div>
+
+    <div class="form-group">
+        <input name="symbol"  type="text" class="form-control" autofocus placeholder="Symbol">
+    </div>
+    <div class="form-group">
+        <input name="shares" type="number" class="form-control" placeholder="Quantity">
+    </div>
+    <div class="form-group">
+        <button class="btn btn-md btn-info" >Buy</button>
+    </div>
+
+
+
+    <script>
+        const inputs = document.querySelectorAll('input');
+        for (let i = 0; i<inputs.length; i++) {
+            inputs[i].style.marginTop = '1rem'
+            inputs[i].placeholder = 'Search term'
+        };
+    </script>
+</body>
+</html>

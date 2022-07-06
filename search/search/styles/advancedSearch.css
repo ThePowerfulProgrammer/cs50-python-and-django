@@ -1,0 +1,7 @@
+.submit {
+    background-color: rgb(0, 33, 218);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem;
+}
